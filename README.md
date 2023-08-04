@@ -18,6 +18,19 @@ Requirements
 * .NET >= 6.0;
 * .NET Framework >= 4.8.0;
 
+Installation
+------------
+
+    dotnet add package workmail20.pirichain.api --version 1.0.2
+or
+
+    NuGet\Install-Package workmail20.pirichain.api -Version 1.0.2
+
+NuGet Package
+------------
+
+https://www.nuget.org/packages/workmail20.pirichain.api
+
 Usage
 ------------
 ```csharp
