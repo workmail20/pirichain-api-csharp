@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<RootNamespace>pirichain_api_workmail20</RootNamespace>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>workmail20.pirichain.api</PackageId>
+		<Title>Pirichain API library @workmail20</Title>
+		<Authors>workmail20</Authors>
+		<Description>Package for API Pirichain calls through C#</Description>
+		<PackageProjectUrl>https://github.com/workmail20/Pirichain-api-csharp</PackageProjectUrl>
+		<PackageIcon>work20.jpg</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/workmail20/Pirichain-api-csharp</RepositoryUrl>
+		<PackageTags>piri,pirichain,piri blockchain,api</PackageTags>
+		<PackageLicenseFile>LICENSE\LICENSE</PackageLicenseFile>
+		<RepositoryType>git</RepositoryType>
+
+		<TargetFrameworks>net6.0;net48</TargetFrameworks>
+
+		<Copyright>Copyright © workmail20 2023</Copyright>
+
+		<Version>1.0.2</Version>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net6.0'">
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\resources\work20.jpg">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\LICENSE" Pack="true" PackagePath="LICENSE" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="System.Net.Http" Version="4.3.0" />
+	</ItemGroup>
+</Project>
